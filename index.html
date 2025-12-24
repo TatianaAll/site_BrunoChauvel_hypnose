@@ -40,7 +40,8 @@
     <!-- Première partie -->
     <section
       id="first-section"
-      class="flex flex-col justify-center items-center">
+      class="flex flex-col justify-center items-center"
+    >
       <div>
         <img src="resources/logo-white.png" alt="Logo présentation" />
         <h1>Bruno Chauvel</h1>
@@ -49,13 +50,14 @@
     </section>
 
     <!-- Section 2 présentation de l'hypnose -->
-    <section id="second-section">
+    <section id="second-section" class="bg-[#E8DFCA]">
       <h2>Hypnose Ericksonienne</h2>
       <article>
         <div>
           <img
             src="resources/images/hypnose-ericksonienne-concentration.jpg"
-            alt="Femme concentrée en état hypnotique" />
+            alt="Femme concentrée en état hypnotique"
+          />
         </div>
         <p>
           L'hypnose est un état modifié de conscience, que nous connaissons tous
@@ -101,18 +103,134 @@
     </section>
 
     <!-- Section 4 : les accompagnement proposé -->
-    <section id="fourth-section">
+    <section id="fourth-section" class="bg-[#CBDCEB]">
       <h2>Je peux vous accompagner sur différents aspects :</h2>
 
-      <div>
-        <h3>Troubles psychosomatiques :</h3>
-        <ul>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
+      <div class="flex flex-wrap justify-center">
+        <!-- Troubles psychosomatiques -->
+        <div class="max-w-sm rounded overflow-hidden shadow-lg mx-3">
+          <img
+            class="w-full"
+            src="./resources/images/hypnose-ericksonienne-psychosomatique.jpg"
+            alt="Troubles psychosomatiques illustration"
+          />
+          <div class="p-3">
+            <div class="font-bold text-xl mb-2">
+              Troubles psychosomatiques :
+            </div>
+            <div class="flex gap-2 justify-content align-items">
+              <span class="bg-[#6D94C5] rounded-full px-2 py-3 text-sm font-semibold text-[#F5EFE6] mr-2 mb-2">
+                Le bégaiement
+              </span>
+              <span class="bg-[#6D94C5] rounded-full px-2 py-3 text-sm font-semibold text-[#F5EFE6] mr-2 mb-2">
+                La migraine
+              </span>
+              <span class="bg-[#6D94C5] rounded-full px-2 py-3 text-sm font-semibold text-[#F5EFE6] mr-2 mb-2">
+                L'eczéma
+              </span>
+            </div>
+          </div>
+        </div>
+        <!-- Trouble fonctionnel -->
+        <div class="max-w-sm rounded overflow-hidden shadow-lg mx-3">
+          <img
+            class="w-full"
+            src="./resources/images/hypnose-ericksonienne-troubles-fonctionnel.jpg"
+            alt="Troubles fonctionnel illustration"
+          />
+          <div class="p-3">
+            <div class="font-bold text-xl mb-2">Troubles fonctionnel :</div>
+            <div class="flex flex-wrap gap-2 justify-content align-items">
+              <span class="bg-[#6D94C5] rounded-full px-2 py-3 text-sm font-semibold text-[#F5EFE6] mr-2 mb-2">
+                Psychologiques
+              </span>
+              <span class="bg-[#6D94C5] rounded-full px-2 py-3 text-sm font-semibold text-[#F5EFE6] mr-2 mb-2">
+                Dépressions
+              </span>
+              <span class="bg-[#6D94C5] rounded-full px-2 py-3 text-sm font-semibold text-[#F5EFE6] mr-2 mb-2">
+                Névroses
+              </span>
+              <span class="bg-[#6D94C5] rounded-full px-2 py-3 text-sm font-semibold text-[#F5EFE6] mr-2 mb-2">
+                Syndrôme post-traumatique
+              </span>
+              <span class="bg-[#6D94C5] rounded-full px-2 py-3 text-sm font-semibold text-[#F5EFE6] mr-2 mb-2">
+                Perte de l'estime de soi
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Trouble sexuels -->
+        <div class="max-w-sm rounded overflow-hidden shadow-lg mx-3">
+          <img
+            class="w-full"
+            src="./resources/images/hypnose-ericksonienne-troubles-sexuels.jpg"
+            alt="Troubles sexuels illustration" />
+          <div class="p-3">
+            <div class="font-bold text-xl mb-2">Troubles sexuels :</div>
+            <div class="flex flex-wrap gap-2 justify-content align-items">
+              <span class="bg-[#6D94C5] rounded-full px-2 py-3 text-sm font-semibold text-[#F5EFE6] mr-2 mb-2">
+                Ejaculation précoce
+              </span>
+              <span class="bg-[#6D94C5] rounded-full px-2 py-3 text-sm font-semibold text-[#F5EFE6] mr-2 mb-2">
+                Troubles de l'érection
+              </span>
+              <span class="bg-[#6D94C5] rounded-full px-2 py-3 text-sm font-semibold text-[#F5EFE6] mr-2 mb-2">
+                Vaginisme
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Trouble du comportement alimentaire -->
+        <div class="max-w-sm rounded overflow-hidden shadow-lg mx-3">
+          <img
+            class="w-full"
+            src="./resources/images/hypnose-ericksonienne-tca.jpg"
+            alt="Troubles du comportement alimentaire illustration"
+          />
+          <div class="p-3">
+            <div class="font-bold text-xl mb-2">Troubles du comportement alimentaire :</div>
+            <div class="flex flex-wrap gap-2 justify-content align-items">
+              <span class="bg-[#6D94C5] rounded-full px-2 py-3 text-sm font-semibold text-[#F5EFE6] mr-2 mb-2">
+                Boulimie
+              </span>
+              <span class="bg-[#6D94C5] rounded-full px-2 py-3 text-sm font-semibold text-[#F5EFE6] mr-2 mb-2">
+                Anorexie mentale
+              </span>
+              <span class="bg-[#6D94C5] rounded-full px-2 py-3 text-sm font-semibold text-[#F5EFE6] mr-2 mb-2">
+                Retrouver son poids de forme
+              </span>
+            </div>
+          </div>
+        </div>
+
+                <!-- Trouble du comportement alimentaire -->
+        <div class="max-w-sm rounded overflow-hidden shadow-lg mx-3">
+          <img
+            class="w-full"
+            src="./resources/images/hypnose-ericksonienne-dependance-tabac.jpg"
+            alt="Dépendance au tabac illustration"
+          />
+          <div class="p-3">
+            <div class="font-bold text-xl mb-2">Dépendance au tabac :</div>
+            <div class="flex flex-wrap gap-2 justify-content align-items">
+              <span class="bg-[#6D94C5] rounded-full px-2 py-3 text-sm font-semibold text-[#F5EFE6] mr-2 mb-2">
+                Changement d'habitude
+              </span>
+              <span class="bg-[#6D94C5] rounded-full px-2 py-3 text-sm font-semibold text-[#F5EFE6] mr-2 mb-2">
+                Réduction du stress
+              </span>
+              <span class="bg-[#6D94C5] rounded-full px-2 py-3 text-sm font-semibold text-[#F5EFE6] mr-2 mb-2">
+                Réduction des envies
+              </span>
+            </div>
+          </div>
+        </div>
+        
       </div>
     </section>
+
     <section></section>
     <section></section>
     <section></section>

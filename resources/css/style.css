@@ -1,9 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 /* Set-up des fonts */
 @font-face {
   font-family: "Mayonice";
@@ -37,13 +31,6 @@ h2,
 #third-section {
   height: 100vh;
   background-image: url("../images/hypnose-ericksonienne-ouverture.jpg");
-  background-size: cover;
-  background-position: center;
-}
-
-#fourth-section {
-  height: 100vh;
-  background-color: #cbdceb;
   background-size: cover;
   background-position: center;
 }
