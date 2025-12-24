@@ -1,18 +1,49 @@
-body {
-    margin: 0;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+/* Set-up des fonts */
+@font-face {
+  font-family: "Mayonice";
+  src: url("../fonts/Mayonice.ttf") format("truetype");
+}
 
+@font-face {
+  font-family: "DreamOrphans";
+  src: url("../fonts/Dream Orphans.otf") format("opentype");
+}
 
+h1,
+.name {
+  font-family: "Mayonice", sans-serif;
+}
+
+h2,
+.subtitle {
+  font-family: "DreamOrphans", sans-serif;
+  text-transform: uppercase;
+}
+
+/* BG des sections */
 #first-section {
-    height: 100vh;
-    background-image: url('../images/background-section1-marineAir.jpg');
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-align: center;
+  height: 100vh;
+  background-image: url("../images/hypnose-ericksonienne-marineAir.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#third-section {
+  height: 100vh;
+  background-image: url("../images/hypnose-ericksonienne-ouverture.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#fourth-section {
+  height: 100vh;
+  background-color: #cbdceb;
+  background-size: cover;
+  background-position: center;
 }
