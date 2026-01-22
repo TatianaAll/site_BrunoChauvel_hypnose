@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fr">
+<html lang="fr" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -29,12 +29,22 @@
             </div>
           </div>
 
-          <li class="badge-[#CBDCEB] p-3 text-center">Me contacter</li>
+          <li class="bg-[#CBDCEB] p-3 text-center rounded hover:bg-[#E8DFCA]">
+            <a href="#form-contact">Me contacter</a>
+          </li>
           <li>
             <ul>
               <li>-</li>
               <li>-</li>
               <li>-</li>
+            </ul>
+            <ul class="hidden">
+              <li><a href="#first-section">Accueil</a></li>
+              <li><a href="#second-section">L'hypnose Ericksonienne</a></li>
+              <li><a href="#third-section">Changements possibles</a></li>
+              <li><a href="#fourth-section">Accompagnements proposés</a></li>
+              <li><a href="#fifth-section">A propos de moi</a></li>
+              <li><a href="#form-contact">Me contacter</a></li>
             </ul>
           </li>
         </ul>
@@ -58,7 +68,7 @@
     </section>
 
     <!-- Section 2 présentation de l'hypnose -->
-    <section id="second-section" class="bg-[#E8DFCA]">
+    <section id="second-section" class="bg-[#E8DFCA] pt-5">
       <h2 class="tracking-[0.4rem] text-center text-3xl pt-8">
         l'hypnose Ericksonienne
       </h2>
@@ -107,22 +117,28 @@
     </section>
 
     <!-- Section 3 changements possibles -->
-    <section id="third-section">
-      <h2 class="tracking-[0.4rem] text-center text-3xl pt-8">Quels changements peuvent vous apporter les séances d’hypnose ?</h2>
-      <p>
-        L'hypnose Ericksonienne vous permet d'améliorer votre concentration, la
-        confiance en soi, les apprentissages, les préparations aux examens, la
-        gestion du stress.
-      </p>
+    <section id="third-section" class="pt-30">
+      <div class="bg-[#E8DFCA]/90 max-w-[70%] mx-auto p-8 rounded-md">
+        <h2 class="tracking-[0.4rem] text-center text-3xl pt-8 pb-5">
+          Quels changements peuvent vous apporter les séances d’hypnose ?
+        </h2>
+        <p>
+          L'hypnose Ericksonienne vous permet d'améliorer votre concentration,
+          la confiance en soi, les apprentissages, les préparations aux examens,
+          la gestion du stress.
+        </p>
+      </div>
     </section>
 
     <!-- Section 4 : les accompagnement proposé -->
-    <section id="fourth-section" class="bg-[#CBDCEB]">
-      <h2>Je peux vous accompagner sur différents aspects :</h2>
+    <section id="fourth-section" class="bg-[#CBDCEB] pt-5">
+      <h2 class="tracking-[0.4rem] text-center text-3xl py-8">
+        Je peux vous accompagner sur différents aspects :
+      </h2>
 
-      <div class="flex flex-wrap justify-center">
+      <div class="flex flex-wrap justify-center pb-8">
         <!-- Troubles psychosomatiques -->
-        <div class="max-w-sm rounded overflow-hidden shadow-lg mx-3">
+        <div class="max-w-sm rounded overflow-hidden shadow-lg mx-8 my-8">
           <img
             class="w-full"
             src="./resources/images/hypnose-ericksonienne-psychosomatique.jpg"
@@ -152,7 +168,7 @@
           </div>
         </div>
         <!-- Trouble fonctionnel -->
-        <div class="max-w-sm rounded overflow-hidden shadow-lg mx-3">
+        <div class="max-w-sm rounded overflow-hidden shadow-lg mx-8 my-8">
           <img
             class="w-full"
             src="./resources/images/hypnose-ericksonienne-troubles-fonctionnel.jpg"
@@ -191,7 +207,7 @@
         </div>
 
         <!-- Trouble sexuels -->
-        <div class="max-w-sm rounded overflow-hidden shadow-lg mx-3">
+        <div class="max-w-sm rounded overflow-hidden shadow-lg mx-8 my-8">
           <img
             class="w-full"
             src="./resources/images/hypnose-ericksonienne-troubles-sexuels.jpg"
@@ -220,7 +236,7 @@
         </div>
 
         <!-- Trouble du comportement alimentaire -->
-        <div class="max-w-sm rounded overflow-hidden shadow-lg mx-3">
+        <div class="max-w-sm rounded overflow-hidden shadow-lg mx-8 my-8">
           <img
             class="w-full"
             src="./resources/images/hypnose-ericksonienne-tca.jpg"
@@ -251,7 +267,7 @@
         </div>
 
         <!-- Dépendance au tabac -->
-        <div class="max-w-sm rounded overflow-hidden shadow-lg mx-3">
+        <div class="max-w-sm rounded overflow-hidden shadow-lg mx-8 my-8">
           <img
             class="w-full"
             src="./resources/images/hypnose-ericksonienne-dependance-tabac.jpg"
@@ -281,11 +297,13 @@
       </div>
     </section>
 
-    <section id="fifth-section" class="bg-[#E8DFCA]">
+    <section id="fifth-section" class="bg-[#E8DFCA] pt-5">
       <div class="flex">
         <div class="align-items text-center">
-          <h2>A propos de moi</h2>
-          <p>
+          <h2 class="tracking-[0.4rem] text-center text-3xl py-8">
+            A propos de moi
+          </h2>
+          <p class="text-base/7 max-w-[70%] mx-auto">
             Médecin biologiste de formation (et exerçant), j’ai décidé de
             consacrer une partie de mon activité professionnelle à aider les
             autres d’une façon différente grâce à l’hypnose. <br />
@@ -306,10 +324,12 @@
       </div>
     </section>
 
-    <section id="form-contact">
-      <h3>Contact</h3>
-      <form class="bg-[#6D94C5] p-6 rounded-lg max-w-lg mx-auto">
-        <div>
+    <section id="form-contact" class="pt-5">
+      <h2 class="tracking-[0.4rem] text-white text-center text-3xl py-8">
+        Contact
+      </h2>
+      <form class="bg-[#6D94C5] p-6 rounded-lg max-w-3xl mx-auto">
+        <div class="mt-3 mb-5">
           <label for="name" class="block text-[#F5EFE6]"
             >Votre prénom et nom</label
           >
@@ -317,10 +337,12 @@
             type="text"
             id="name"
             name="name"
-            class="block w-full rounded-md bg-[#F5EFE6] px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 focus:outline-2 focus:-outline-offset-2 focus:outline-[#E8DFCA] sm:text-sm/6"
+            placeholder="Prénom Nom"
+            class="block w-full rounded-md bg-[#F5EFE6] px-3 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 focus:outline-2 focus:-outline-offset-2 focus:outline-[#E8DFCA] sm:text-sm/6"
           />
         </div>
-        <div>
+
+        <div class="mt-3 mb-5">
           <label for="email" class="block text-[#F5EFE6]"
             >Votre adresse mail</label
           >
@@ -328,10 +350,12 @@
             type="mail"
             id="email"
             name="email"
+            placeholder="example@exemple.com"
             class="block w-full rounded-md bg-[#F5EFE6] px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 focus:outline-2 focus:-outline-offset-2 focus:outline-[#E8DFCA] sm:text-sm/6"
           />
         </div>
-        <div>
+
+        <div class="mt-3 mb-5">
           <label for="numero" class="block text-[#F5EFE6]"
             >Votre numéro de téléphone</label
           >
@@ -339,42 +363,68 @@
             type="numero"
             id="numero"
             name="numero"
+            placeholder="06 00 00 00 00"
             class="block w-full rounded-md bg-[#F5EFE6] px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 focus:outline-2 focus:-outline-offset-2 focus:outline-[#E8DFCA] sm:text-sm/6"
           />
         </div>
-        <div>
+
+        <div class="mt-3 mb-5">
           <label for="about" class="block text-[#F5EFE6]">Votre message</label>
           <textarea
             id="about"
             name="about"
             rows="3"
+            placeholder="Écrivez votre message ici..."
             class="block w-full rounded-md bg-[#F5EFE6] px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 focus:outline-2 focus:-outline-offset-2 focus:outline-[#E8DFCA] sm:text-sm/6"
           ></textarea>
         </div>
-        <button
-          type="submit"
-          class="bg-[#F5EFE6] text-[#6D94C5] font-bold py-2 px-4 rounded hover:bg-[#E8DFCA]"
-        >
-          Envoyer
-        </button>
+        <div class="flex justify-center">
+          <button
+            type="submit"
+            class="bg-[#F5EFE6] text-[#6D94C5] text-lg font-bold py-2 px-4 rounded hover:bg-[#E8DFCA]"
+          >
+            Envoyer
+          </button>
+        </div>
       </form>
     </section>
-    <footer>
-      <section>
+
+    <footer class="bg-[#6D94C5] pt-8 pb-8">
+      <section class="flex justify-between ms-8">
         <div>
-          <p class="name">Bruno Chauvel</p>
-          <p class="subtitle uppercase">
+          <p class="name text-4xl mb-2">Bruno Chauvel</p>
+          <p class="subtitle uppercase tracking-[0.1rem] text-2xl mb-4">
             Hypnothérapeuthe en hypnose Ericksonienne
           </p>
-        </div>
-        <div>
           <p>
             4 rue St Sauveur <br />Centre-ville (métro République ou St Germain)
             <br />
             35000 Rennes
           </p>
         </div>
-        <div>CARTE</div>
+        <!-- https://www.maps.ie/create-google-map/ -->
+        <div class="w-[50%] me-8">
+          <div style="width: 100%">
+            <iframe
+              width="100%"
+              height="300"
+              frameborder="0"
+              scrolling="no"
+              marginheight="0"
+              marginwidth="0"
+              src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=4%20rue%20St%20Sauveur%2035000%20Rennes+(Bruno%20Chauvel%20Hypnoth%C3%A9rapeuth)&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+              ></iframe
+            >
+          </div>
+        </div>
+        <!-- <div>
+          <gmp-map
+            center="37.4220656,-122.0840897"
+            zoom="10"
+            map-id="DEMO_MAP_ID"
+            style="height: 500px"
+          ></gmp-map>
+        </div> -->
       </section>
     </footer>
   </body>
