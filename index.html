@@ -11,17 +11,28 @@
     <title>Bruno Chauvel - hypnothérapeuthe</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="resources/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
   </head>
 
-  <body>
-    <header>
-      <nav class="bg-[#6D94C5]">
+  <body class="relative">
+    <header class="h-[5rem]">
+      <nav class="bg-[#6D94C5] fixed top-0 z-60 w-[100%] h-[5rem]">
         <ul class="flex justify-between items-center">
           <div class="flex">
-            <li class="w-[6rem]">
+            <li class="w-[5rem]">
               <img src="resources/logo-white.png" alt="Logo du site" />
             </li>
-            <div class="mt-7">
+            <div class="mt-3">
               <li class="name text-2xl">Bruno Chauvel</li>
               <li class="subtitle uppercase tracking-[0.4rem]">
                 Hypnose Ericksonienne
@@ -33,18 +44,32 @@
             <a href="#form-contact">Me contacter</a>
           </li>
           <li>
-            <ul>
-              <li>-</li>
-              <li>-</li>
-              <li>-</li>
+            <ul
+              id="hamburgerMenu"
+              class="absolute top-8 right-10 flex flex-col justify-center"
+            >
+              <li id="cross1" class="h-[3px] w-8 bg-[#F5EFE6] mb-2"></li>
+              <li class="h-[3px] w-8 bg-[#F5EFE6] mb-2"></li>
+              <li id="cross2" class="h-[3px] w-8 bg-[#F5EFE6]"></li>
             </ul>
-            <ul class="hidden">
-              <li><a href="#first-section">Accueil</a></li>
-              <li><a href="#second-section">L'hypnose Ericksonienne</a></li>
-              <li><a href="#third-section">Changements possibles</a></li>
-              <li><a href="#fourth-section">Accompagnements proposés</a></li>
-              <li><a href="#fifth-section">A propos de moi</a></li>
-              <li><a href="#form-contact">Me contacter</a></li>
+
+            <ul id="sideBar" class="w-[20rem] bg-[#6D94C5] pt-28">
+              <li class="px-8 py-4 text-white text-lg">Accueil</li>
+              <li class="px-8 py-4 text-white text-lg">
+                <a href="#second-section">Hypnose Ericksonienne</a>
+              </li>
+              <li class="px-8 py-4 text-white text-lg">
+                <a href="#third-section">Changements possibles</a>
+              </li>
+              <li class="px-8 py-4 text-white text-lg">
+                <a href="#fourth-section">Accompagnements</a>
+              </li>
+              <li class="px-8 py-4 text-white text-lg">
+                <a href="#fifth-section">A propos de moi</a>
+              </li>
+              <li class="px-8 py-4 text-white text-lg">
+                <a href="#form-contact">Contact</a>
+              </li>
             </ul>
           </li>
         </ul>
@@ -117,8 +142,8 @@
     </section>
 
     <!-- Section 3 changements possibles -->
-    <section id="third-section" class="pt-30">
-      <div class="bg-[#E8DFCA]/90 max-w-[70%] mx-auto p-8 rounded-md">
+    <section id="third-section" class="pt-20">
+      <div class="bg-[#F5EFE6]/90 max-w-[70%] mx-auto p-8 rounded-xl">
         <h2 class="tracking-[0.4rem] text-center text-3xl pt-8 pb-5">
           Quels changements peuvent vous apporter les séances d’hypnose ?
         </h2>
@@ -297,9 +322,9 @@
       </div>
     </section>
 
-    <section id="fifth-section" class="bg-[#E8DFCA] pt-5">
+    <section id="fifth-section" class="bg-[#E8DFCA]">
       <div class="flex">
-        <div class="align-items text-center">
+        <div class="align-items text-center pt-5">
           <h2 class="tracking-[0.4rem] text-center text-3xl py-8">
             A propos de moi
           </h2>
@@ -315,7 +340,7 @@
             traiter certains symptômes.
           </p>
         </div>
-        <div>
+        <div class="h-[100%]">
           <img
             src="./resources/images/hypnose-ericksonienne-bruno-chauvel.jpg"
             alt="Photo de Bruno Chauvel hypnothérapeute à Rennes"
@@ -404,19 +429,17 @@
         </div>
         <!-- https://www.maps.ie/create-google-map/ -->
         <div class="w-[50%] me-8">
-          <div style="width: 100%">
-            <iframe
-              width="100%"
-              height="300"
-              frameborder="0"
-              scrolling="no"
-              marginheight="0"
-              marginwidth="0"
-              src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=4%20rue%20St%20Sauveur%2035000%20Rennes+(Bruno%20Chauvel%20Hypnoth%C3%A9rapeuth)&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
-              ></iframe
-            >
-          </div>
+          <iframe
+            width="100%"
+            height="300"
+            frameborder="0"
+            scrolling="no"
+            marginheight="0"
+            marginwidth="0"
+            src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=4%20rue%20St%20Sauveur%2035000%20Rennes+(Bruno%20Chauvel%20Hypnoth%C3%A9rapeuth)&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+          ></iframe>
         </div>
+        <div id="map h-60"></div>
         <!-- <div>
           <gmp-map
             center="37.4220656,-122.0840897"
@@ -427,5 +450,6 @@
         </div> -->
       </section>
     </footer>
+    <script src="index.js"></script>
   </body>
 </html>
