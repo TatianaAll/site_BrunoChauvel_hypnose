@@ -11,23 +11,12 @@
     <title>Bruno Chauvel - hypnothérapeuthe</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="resources/css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
-      crossorigin=""
-    />
-    <script
-      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
-      crossorigin=""
-    ></script>
   </head>
 
   <body class="relative">
     <header class="h-[5rem]">
       <nav class="bg-[#6D94C5] fixed top-0 z-60 w-[100%] h-[5rem]">
-        <ul class="flex justify-between items-center">
+        <ul class="flex justify-start items-center">
           <div class="flex">
             <li class="w-[5rem]">
               <img src="resources/logo-white.png" alt="Logo du site" />
@@ -40,7 +29,7 @@
             </div>
           </div>
 
-          <li class="bg-[#CBDCEB] p-3 text-center rounded hover:bg-[#E8DFCA]">
+          <li class="bg-[#CBDCEB] ms-10 p-3 text-center rounded hover:bg-[#E8DFCA]">
             <a href="#form-contact">Me contacter</a>
           </li>
           <li>
@@ -80,12 +69,12 @@
     <section id="first-section" class="flex justify-center relative">
       <div class="flex-col items-center gap-12">
         <!-- Logo -->
-        <div class="absolute bottom-125 left-40 w-[20rem]">
+        <div class="absolute bottom-[28rem] left-[15rem] w-[20rem]">
           <img src="resources/logo-white.png" alt="Logo présentation" />
         </div>
 
         <!-- Nom et titre -->
-        <h1 class="text-5xl mb-4 z-50 mt-[9rem] relative">Bruno Chauvel</h1>
+        <h1 class="text-5xl mb-4 z-50 mt-[9rem] ms-20 relative">Bruno Chauvel</h1>
         <h2 class="text-6xl tracking-[0.6rem] z-50 relative">
           Hypnose Ericksonienne
         </h2>
@@ -94,7 +83,7 @@
 
     <!-- Section 2 présentation de l'hypnose -->
     <section id="second-section" class="bg-[#E8DFCA] pt-5">
-      <h2 class="tracking-[0.4rem] text-center text-3xl pt-8">
+      <h2 class="tracking-[0.4rem] text-center text-3xl pt-20 pb-5">
         l'hypnose Ericksonienne
       </h2>
       <article class="flex justify-center items-center gap-8 m-8">
@@ -131,7 +120,7 @@
           />
         </div>
       </article>
-      <div class="p-8">
+      <div class="pt-5 pb-10 max-w-[70%] mx-auto">
         <p>
           Contrairement à la psychanalyse, l'hypnose ne cherche pas à traiter la
           cause du symptôme, mais à éliminer le symptôme, grâce à l'action de
@@ -157,7 +146,7 @@
 
     <!-- Section 4 : les accompagnement proposé -->
     <section id="fourth-section" class="bg-[#CBDCEB] pt-5">
-      <h2 class="tracking-[0.4rem] text-center text-3xl py-8">
+      <h2 class="tracking-[0.4rem] text-center text-3xl pt-20 pb-8">
         Je peux vous accompagner sur différents aspects :
       </h2>
 
@@ -324,7 +313,7 @@
 
     <section id="fifth-section" class="bg-[#E8DFCA]">
       <div class="flex">
-        <div class="align-items text-center pt-5">
+        <div class="align-items items-center p-8">
           <h2 class="tracking-[0.4rem] text-center text-3xl py-8">
             A propos de moi
           </h2>
@@ -440,14 +429,6 @@
           ></iframe>
         </div>
         <div id="map h-60"></div>
-        <!-- <div>
-          <gmp-map
-            center="37.4220656,-122.0840897"
-            zoom="10"
-            map-id="DEMO_MAP_ID"
-            style="height: 500px"
-          ></gmp-map>
-        </div> -->
       </section>
     </footer>
     <script src="index.js"></script>
