@@ -29,23 +29,24 @@ document.addEventListener("click", (e) => {
   emailjs.init("2l1o8GgE6UDC_RGJ_");
 })();
 
-document
-  .querySelector("form")
-  .addEventListener("submit", function (event) {
-    event.preventDefault();
-    // Dummy input to avoid robot
-    const inputTrapped = document.getElementById("troll");
-    // If all the field complete = robot so no mail
-    if (!inputTrapped.value) {
-      emailjs.sendForm("service_iuo8fi9", "template_fa7eraa", this).then(
-        () => {
-          alert("Message envoyé ✅");
-          this.reset();
-        },
-        (error) => {
-          alert("Erreur ❌");
-          console.log(error);
-        },
-      );
-    }
-  });
+document.querySelector("form").addEventListener("submit", function (event) {
+  event.preventDefault();
+  // Dummy input to avoid robot
+  const inputTrapped = document.getElementById("troll");
+
+  // If all the field complete = robot so no mail
+  if (!inputTrapped.value) {
+    // get the time
+    document.getElementById("time").value = new Date().toLocaleString("fr-FR");
+    emailjs.sendForm("service_iuo8fi9", "template_fa7eraa", this).then(
+      () => {
+        alert("Message envoyé ✅");
+        this.reset();
+      },
+      (error) => {
+        alert("Erreur ❌");
+        console.log(error);
+      },
+    );
+  }
+});

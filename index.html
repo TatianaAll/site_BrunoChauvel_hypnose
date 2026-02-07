@@ -319,11 +319,10 @@
       <h2 class="tracking-[0.4rem] text-white text-center text-3xl py-8">
         Contact
       </h2>
-      <form class="bg-[#6D94C5] p-6 rounded-lg max-w-3xl mx-auto">
+      <form class="bg-[#6D94C5] p-6 rounded-lg max-w-3xl mx-auto" method="POST" action="#">
         <div class="mt-3 mb-5">
-          <label for="name" class="block text-[#F5EFE6]"
-            >Votre prénom et nom</label
-          >
+          <label for="name" class="block text-[#F5EFE6]">
+            Votre prénom et nom</label>
           <input
             type="text"
             id="name"
@@ -366,6 +365,7 @@
             placeholder="Écrivez votre message ici..."
             class="block w-full rounded-lg bg-[#F5EFE6] px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 focus:outline-2 focus:-outline-offset-2 focus:outline-[#E8DFCA] sm:text-sm/6"></textarea>
         <input type="text" name="company" class="hidden" id="troll">
+        <input type="hidden" name="time" id="time">
         </div>
         <div class="flex justify-center">
           <button
@@ -405,7 +405,7 @@
         <div id="map h-60"></div>
       </section>
     </footer>
-    <script src="index.js"></script>
+    <script src="index.js" defer></script>
     <!-- Gestion mail -->
     <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
   </body>
