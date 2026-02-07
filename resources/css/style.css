@@ -1,3 +1,4 @@
+@import "tailwindcss"; 
 /* Set-up des fonts */
 @font-face {
   font-family: "Mayonice";
@@ -22,7 +23,6 @@ h2,
 
 /* BG des sections */
 #first-section {
-  height: 95vh;
   background-image: url("../images/hypnose-ericksonienne-marineAir.jpg");
   background-size: cover;
   background-position: center;
