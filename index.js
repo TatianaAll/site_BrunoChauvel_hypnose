@@ -24,17 +24,20 @@ document.addEventListener("click", (e) => {
 });
 
 // Envoi mail
+// this method allows the setup of Options for the application globally. The configuration should happen before any send email method is called
 (function () {
-  emailjs.init("2l1o8GgE6UDC_RGJ_"); // ta clé publique
+  emailjs.init(import.meta.env.EMAIL_PUBLIC_KEY);
 })();
 
 document
   .querySelector("form")
-  .addEventListener("submit", function (e) {
-    e.preventDefault();
+  .addEventListener("submit", function (event) {
+    event.preventDefault();
+    // Dummy input to avoid robot
     const inputTrapped = document.getElementById("troll");
+    // If all the field complete = robot so no mail
     if (!inputTrapped.value) {
-      emailjs.sendForm("service_iuo8fi9", "template_fa7eraa", this).then(
+      emailjs.sendForm(import.meta.env.EMAIL_SERVICE_ID, import.meta.env.EMAIL_TEMPLATE, this).then(
         () => {
           alert("Message envoyé ✅");
           this.reset();
