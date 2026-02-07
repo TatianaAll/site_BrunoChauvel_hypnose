@@ -336,7 +336,7 @@
           <label for="email" class="block text-[#F5EFE6]">
             Votre adresse mail</label>
           <input
-            type="mail"
+            type="email"
             id="email"
             name="email"
             placeholder="example@exemple.com"
@@ -349,7 +349,7 @@
             Votre numéro de téléphone
           </label>
           <input
-            type="numero"
+            type="tel"
             id="numero"
             name="numero"
             placeholder="06 00 00 00 00"
@@ -366,6 +366,7 @@
             placeholder="Écrivez votre message ici..."
             class="block w-full rounded-lg bg-[#F5EFE6] px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 focus:outline-2 focus:-outline-offset-2 focus:outline-[#E8DFCA] sm:text-sm/6">
         </textarea>
+        <input type="text" name="company" class="hidden" id="troll">
         </div>
         <div class="flex justify-center">
           <button
@@ -406,5 +407,7 @@
       </section>
     </footer>
     <script src="index.js"></script>
+    <!-- Gestion mail -->
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
   </body>
 </html>
