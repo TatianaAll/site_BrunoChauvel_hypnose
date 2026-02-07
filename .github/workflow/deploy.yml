@@ -1,0 +1,39 @@
+name: Site Bruno Chauvel - hypnothérapeuthe en hypnose Ericksonienne
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    name: Déploiement
+    runs-on: ubuntu-latest
+    steps:
+      # Récupérer le code
+      - name: Checkout du repo
+        uses: actions/checkout@v4
+
+      # Préparer Github Pages
+      - name: Configuration de Github Pages
+        uses: actions/configure-pages@v4
+
+      # Uploader les fichiers statiques
+      - name: Upload des fichiers
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: "."  # tous les fichiers à la racine du repo ou adapte le chemin
+
+      # Déploiement sur Github Pages
+      - name: Déploiement
+        id: deployment
+        uses: actions/deploy-pages@v4
