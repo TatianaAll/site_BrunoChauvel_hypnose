@@ -26,7 +26,7 @@ document.addEventListener("click", (e) => {
 // Envoi mail
 // this method allows the setup of Options for the application globally. The configuration should happen before any send email method is called
 (function () {
-  emailjs.init(import.meta.env.EMAIL_PUBLIC_KEY);
+  emailjs.init("2l1o8GgE6UDC_RGJ_");
 })();
 
 document
@@ -37,7 +37,7 @@ document
     const inputTrapped = document.getElementById("troll");
     // If all the field complete = robot so no mail
     if (!inputTrapped.value) {
-      emailjs.sendForm(import.meta.env.EMAIL_SERVICE_ID, import.meta.env.EMAIL_TEMPLATE, this).then(
+      emailjs.sendForm("service_iuo8fi9", "template_fa7eraa", this).then(
         () => {
           alert("Message envoyé ✅");
           this.reset();
