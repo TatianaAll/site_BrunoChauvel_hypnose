@@ -15,15 +15,15 @@
 
   <body class="relative">
     <header class="h-[5rem]">
-      <nav class="bg-[#6D94C5] fixed top-0 z-60 w-[100%] h-[5rem]">
+      <nav class="bg-[#6D94C5] fixed top-0 z-60 w-full h-[5rem]">
         <ul class="flex justify-start items-center">
           <div class="flex">
             <li class="w-[5rem]">
               <img src="resources/logo-white.png" alt="Logo du site" />
             </li>
             <div class="mt-3">
-              <li class="name text-lg lg:text-2xl">Bruno Chauvel</li>
-              <li class="subtitle uppercase tracking-[0.2rem] text-m lg:text-lg lg:tracking-[0.4rem]">
+              <li class="name text-lg md:text-xl lg:text-2xl">Bruno Chauvel</li>
+              <li class="subtitle uppercase tracking-[0.2rem] text-sm md:text-md md:tracking-[0.3rem] lg:text-lg lg:tracking-[0.4rem]">
                 Hypnose Ericksonienne
               </li>
             </div>
@@ -35,28 +35,27 @@
           <li>
             <ul
               id="hamburgerMenu"
-              class="absolute top-8 right-8 lg:right-10 flex flex-col justify-center"
-            >
+              class="absolute top-8 right-7 lg:right-10 flex flex-col justify-center">
               <li id="cross1" class="h-[3px] w-8 bg-[#F5EFE6] mb-2"></li>
               <li class="h-[3px] w-8 bg-[#F5EFE6] mb-2"></li>
               <li id="cross2" class="h-[3px] w-8 bg-[#F5EFE6]"></li>
             </ul>
 
             <ul id="sideBar" class="w-[15rem] lg:w-[20rem] bg-[#6D94C5] pt-28">
-              <li class="px-8 py-4 text-white text-sm md:text-lg">Accueil</li>
-              <li class="px-8 py-4 text-white text-sm md:text-lg">
+              <li class="px-8 py-4 text-white text-sm lg:text-md">Accueil</li>
+              <li class="px-8 py-4 text-white text-sm lg:text-md">
                 <a href="#second-section">Hypnose Ericksonienne</a>
               </li>
-              <li class="px-8 py-4 text-white text-sm md:text-lg">
+              <li class="px-8 py-4 text-white text-sm lg:text-md">
                 <a href="#third-section">Changements possibles</a>
               </li>
-              <li class="px-8 py-4 text-white text-sm md:text-lg">
+              <li class="px-8 py-4 text-white text-sm lg:text-md">
                 <a href="#fourth-section">Accompagnements</a>
               </li>
-              <li class="px-8 py-4 text-white text-sm md:text-lg">
+              <li class="px-8 py-4 text-white text-sm lg:text-md">
                 <a href="#fifth-section">A propos de moi</a>
               </li>
-              <li class="px-8 py-4 text-white text-sm md:text-lg">
+              <li class="px-8 py-4 text-white text-sm lg:text-md">
                 <a href="#form-contact">Contact</a>
               </li>
             </ul>
@@ -66,16 +65,16 @@
     </header>
 
     <!-- Première partie -->
-    <section id="first-section" class="flex justify-center h-[85vh] lg:h-[90vh]">
+    <section id="first-section" class="flex justify-center h-[90vh]">
       <div class="flex-col items-center gap-12 relative">
         <!-- Logo -->
-        <div class="absolute bottom-[32rem] left-[65%] w-[8rem] lg:left-[-10rem] lg:bottom-[25rem] lg:w-[20rem]">
-          <img src="resources/logo-white.png" alt="Logo présentation" class="w-[100%]" />
+        <div class="absolute hidden md:block md:w-[15rem] md:-left-30 lg:left-[-10rem] lg:bottom-[25rem] lg:w-[20rem] ">
+          <img src="resources/logo-white.png" alt="Logo présentation" class="w-full" />
         </div>
 
         <!-- Nom et titre -->
-        <h1 class="text-2xl mb-3 z-50 mt-[6rem] ms-10 lg:text-5xl lg:mb-4 lg:mt-[9rem] lg:ms-20 relative">Bruno Chauvel</h1>
-        <h2 class="text-2xl tracking-[0.3rem] lg:text-6xl lg:tracking-[0.6rem] z-50 relative">
+        <h1 class="text-2xl mb-3 z-50 mt-[6rem] ms-10 md:text-4xl lg:text-5xl lg:mb-4 lg:mt-[9rem] lg:ms-20 relative">Bruno Chauvel</h1>
+        <h2 class="text-2xl tracking-[0.3rem] md:text-4xl md:tracking-[O.5rem] lg:text-6xl lg:tracking-[0.6rem] z-50 relative">
           Hypnose Ericksonienne
         </h2>
       </div>
@@ -103,7 +102,7 @@
           dans notre inconscient, qu’il permet en effet d'atteindre.
         </p>
       </article>
-      <article class="gap-8 lg;flex lg:justify-center lg:items-center lg:m-8">
+      <article class="gap-8 lg:flex lg:justify-center lg:items-center lg:m-8">
         <p class="m-auto mt-4 max-w-[70%] lg:max-w-[50%]">
           Grâce à l'hypnose Ericksonienne, méthode élaborée au vingtième siècle
           par Milton Erickson, psychiatre américain, le thérapeute vous permet
@@ -152,7 +151,7 @@
 
       <div class="flex flex-wrap justify-center pb-8">
         <!-- Troubles psychosomatiques -->
-        <div class="max-w-sm rounded overflow-hidden shadow-lg mx-8 my-8">
+        <div class="max-w-sm rounded overflow-hidden shadow-md mx-8 my-8">
           <img
             class="w-full"
             src="./resources/images/hypnose-ericksonienne-psychosomatique.jpg"
@@ -178,7 +177,7 @@
           </div>
         </div>
         <!-- Trouble fonctionnel -->
-        <div class="max-w-sm rounded overflow-hidden shadow-lg mx-8 my-8">
+        <div class="max-w-sm rounded overflow-hidden shadow-md mx-8 my-8">
           <img
             class="w-full"
             src="./resources/images/hypnose-ericksonienne-troubles-fonctionnel.jpg"
@@ -211,7 +210,7 @@
         </div>
 
         <!-- Trouble sexuels -->
-        <div class="max-w-sm rounded overflow-hidden shadow-lg mx-8 my-8">
+        <div class="max-w-sm rounded overflow-hidden shadow-md mx-8 my-8">
           <img
             class="w-full"
             src="./resources/images/hypnose-ericksonienne-troubles-sexuels.jpg"
@@ -330,7 +329,7 @@
             id="name"
             name="name"
             placeholder="Prénom Nom"
-            class="block w-full rounded-md bg-[#F5EFE6] px-3 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 focus:outline-2 focus:-outline-offset-2 focus:outline-[#E8DFCA] sm:text-sm/6"/>
+            class="block w-full rounded-lg bg-[#F5EFE6] px-3 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 focus:outline-2 focus:-outline-offset-2 focus:outline-[#E8DFCA] sm:text-sm/6"/>
         </div>
 
         <div class="mt-3 mb-5">
@@ -341,7 +340,7 @@
             id="email"
             name="email"
             placeholder="example@exemple.com"
-            class="block w-full rounded-md bg-[#F5EFE6] px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 focus:outline-2 focus:-outline-offset-2 focus:outline-[#E8DFCA] sm:text-sm/6"
+            class="block w-full rounded-lg bg-[#F5EFE6] px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 focus:outline-2 focus:-outline-offset-2 focus:outline-[#E8DFCA] sm:text-sm/6"
           />
         </div>
 
@@ -354,7 +353,7 @@
             id="numero"
             name="numero"
             placeholder="06 00 00 00 00"
-            class="block w-full rounded-md bg-[#F5EFE6] px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 focus:outline-2 focus:-outline-offset-2 focus:outline-[#E8DFCA] sm:text-sm/6"
+            class="block w-full rounded-lg bg-[#F5EFE6] px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 focus:outline-2 focus:-outline-offset-2 focus:outline-[#E8DFCA] sm:text-sm/6"
           />
         </div>
 
@@ -365,7 +364,7 @@
             name="about"
             rows="3"
             placeholder="Écrivez votre message ici..."
-            class="block w-full rounded-md bg-[#F5EFE6] px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 focus:outline-2 focus:-outline-offset-2 focus:outline-[#E8DFCA] sm:text-sm/6">
+            class="block w-full rounded-lg bg-[#F5EFE6] px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 focus:outline-2 focus:-outline-offset-2 focus:outline-[#E8DFCA] sm:text-sm/6">
         </textarea>
         </div>
         <div class="flex justify-center">
@@ -382,7 +381,7 @@
       <section class="lg:flex lg:justify-between">
         <div>
           <p class="name mb-2 text-2xl lg:text-4xl">Bruno Chauvel</p>
-          <p class="subtitle uppercase tracking-[0.1rem] mb-4 text-xl lg:text-2xl">
+          <p class="subtitle uppercase tracking-[0.1rem] mb-4 text-xl md:tracking-[0.3rem] lg:text-2xl">
             Hypnothérapeuthe en hypnose Ericksonienne
           </p>
           <p>
@@ -392,7 +391,7 @@
           </p>
         </div>
         <!-- https://www.maps.ie/create-google-map/ -->
-        <div class="w-80 mt-4 mx-auto lg:w-[50%] lg:mt-0 lg:me-8">
+        <div class="w-80 mt-4 mx-auto md:w-full lg:w-[50%] lg:mt-0 lg:me-8">
           <iframe
             width="100%"
             height="300"
