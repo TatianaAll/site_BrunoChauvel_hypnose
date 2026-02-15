@@ -33,9 +33,11 @@ document.querySelector("form").addEventListener("submit", function (event) {
   event.preventDefault();
   // Dummy input to avoid robot
   const inputTrapped = document.getElementById("troll");
+  // const inputs = document.querySelectorAll("input");
 
   // If all the field complete = robot so no mail
   if (!inputTrapped.value) {
+    // if(inputs)
     // get the time
     document.getElementById("time").value = new Date().toLocaleString("fr-FR");
     emailjs.sendForm("service_iuo8fi9", "template_fa7eraa", this).then(
