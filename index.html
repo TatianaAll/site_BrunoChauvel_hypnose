@@ -8,6 +8,8 @@
       name="keywords"
       content="Hypnose, hypnothérapie, Rennes, Bruno Chauvel, thérapie, bien-être, santé mentale, relaxation"
     />
+    <meta name="robots" content="index, follow" />
+    <meta name="description" content="Site de Bruno Chauvel, hypnothérapeuthe à Rennes, vous accompagne grâce à l’hypnose Ericksonienne pour gérer stress, anxiété, addictions et améliorer le bien-être.">
     <title>Bruno Chauvel - hypnothérapeuthe</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="resources/css/style.css" />
@@ -101,6 +103,7 @@
             src="resources/images/hypnose-ericksonienne-concentration.jpg"
             alt="Femme concentrée en état hypnotique"
             class="w-full rounded-md"
+            loading="lazy"
           />
         </div>
         <p class="m-auto mt-4 max-w-[70%] lg:max-w-[50%]">
@@ -126,6 +129,7 @@
             src="resources/images/hypnose-ericksonienne-consentement.jpg"
             alt="Toujours avec le consentement de la personne"
             class="w-full rounded-md"
+            loading="lazy"
           />
         </div>
       </article>
@@ -165,7 +169,8 @@
           <img
             class="w-full"
             src="./resources/images/hypnose-ericksonienne-psychosomatique.jpg"
-            alt="Troubles psychosomatiques illustration" />
+            alt="Troubles psychosomatiques illustration"
+            loading="lazy" />
           <div class="p-3">
             <div class="font-bold text-xl mb-2">
               Troubles psychosomatiques :
@@ -191,7 +196,8 @@
           <img
             class="w-full"
             src="./resources/images/hypnose-ericksonienne-troubles-fonctionnel.jpg"
-            alt="Troubles fonctionnel illustration"/>
+            alt="Troubles fonctionnel illustration"
+            loading="lazy"/>
           <div class="p-3">
             <div class="font-bold text-xl mb-2">Troubles fonctionnel :</div>
             <div class="flex flex-wrap gap-2 justify-content align-items">
@@ -224,7 +230,8 @@
           <img
             class="w-full"
             src="./resources/images/hypnose-ericksonienne-troubles-sexuels.jpg"
-            alt="Troubles sexuels illustration"/>
+            alt="Troubles sexuels illustration"
+            loading="lazy"/>
           <div class="p-3">
             <div class="font-bold text-xl mb-2">Troubles sexuels :</div>
             <div class="flex flex-wrap gap-2 justify-content align-items">
@@ -249,7 +256,8 @@
           <img
             class="w-full"
             src="./resources/images/hypnose-ericksonienne-tca.jpg"
-            alt="Troubles du comportement alimentaire illustration"/>
+            alt="Troubles du comportement alimentaire illustration"
+            loading="lazy"/>
           <div class="p-3">
             <div class="font-bold text-xl mb-2">
               Troubles du comportement alimentaire :
@@ -276,7 +284,8 @@
           <img
             class="w-full"
             src="./resources/images/hypnose-ericksonienne-dependance-tabac.jpg"
-            alt="Dépendance au tabac illustration" />
+            alt="Dépendance au tabac illustration" 
+            loading="lazy" />
           <div class="p-3">
             <div class="font-bold text-xl mb-2">Dépendance au tabac :</div>
             <div class="flex flex-wrap gap-2 justify-content align-items">
@@ -320,6 +329,7 @@
           <img
             src="./resources/images/hypnose-ericksonienne-bruno-chauvel.jpg"
             alt="Photo de Bruno Chauvel hypnothérapeute à Rennes"
+            loading="lazy"
           />
         </div>
       </div>
@@ -327,7 +337,7 @@
 
     <section id="form-contact" class="pt-5">
       <h2 class="tracking-[0.4rem] text-white text-center text-3xl py-8">
-        Contact
+        Me contacter
       </h2>
       <form class="bg-[#6D94C5] p-6 rounded-lg max-w-3xl mx-auto" method="POST" action="#">
         <div class="mt-3 mb-5">
@@ -338,7 +348,9 @@
             id="name"
             name="name"
             placeholder="Prénom Nom"
-            class="block w-full rounded-lg bg-[#F5EFE6] px-3 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 focus:outline-2 focus:-outline-offset-2 focus:outline-[#E8DFCA] sm:text-sm/6"/>
+            class="block w-full rounded-lg bg-[#F5EFE6] px-3 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 focus:outline-2 focus:-outline-offset-2 focus:outline-[#E8DFCA] sm:text-sm/6"
+            required
+            />
         </div>
 
         <div class="mt-3 mb-5">
@@ -350,6 +362,7 @@
             name="email"
             placeholder="example@exemple.com"
             class="block w-full rounded-lg bg-[#F5EFE6] px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 focus:outline-2 focus:-outline-offset-2 focus:outline-[#E8DFCA] sm:text-sm/6"
+            required
           />
         </div>
 
@@ -363,6 +376,7 @@
             name="numero"
             placeholder="06 00 00 00 00"
             class="block w-full rounded-lg bg-[#F5EFE6] px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 focus:outline-2 focus:-outline-offset-2 focus:outline-[#E8DFCA] sm:text-sm/6"
+            required
           />
         </div>
 
