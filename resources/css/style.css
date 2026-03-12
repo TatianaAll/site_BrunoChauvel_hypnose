@@ -23,21 +23,21 @@ h2,
 
 /* BG des sections */
 #first-section {
-  background-image: url("../images/hypnose-ericksonienne-marineAir.jpg");
+  background-image: url("../images/hypnose-ericksonienne-marineAir.webp");
   background-size: cover;
   background-position: center;
 }
 
 #third-section {
   height: 95vh;
-  background-image: url("../images/hypnose-ericksonienne-ouverture.jpg");
+  background-image: url("../images/hypnose-ericksonienne-ouverture.webp");
   background-size: cover;
   background-position: center;
 }
 
 #form-contact {
   height: 95vh;
-  background-image: url("../images/hypnose-ericksonienne-formulaire.jpg");
+  background-image: url("../images/hypnose-ericksonienne-formulaire.webp");
   background-size: cover;
   background-position: center;
 }
