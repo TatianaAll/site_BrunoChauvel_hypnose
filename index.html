@@ -11,7 +11,7 @@
     <meta name="robots" content="index, follow" />
     <meta name="description" content="Site de Bruno Chauvel, hypnothérapeuthe à Rennes, vous accompagne grâce à l’hypnose Ericksonienne pour gérer stress, anxiété, addictions et améliorer le bien-être.">
     <title>Bruno Chauvel - hypnothérapeuthe</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="resources/css/style.css" />
     <link rel="icon" href="/resources/logo-noir.png">
   </head>
@@ -19,23 +19,23 @@
   <body class="relative">
     <header class="h-[5rem]">
       <nav class="bg-[#6D94C5] fixed top-0 z-60 w-full h-[5rem]">
-        <ul class="flex justify-start items-center">
+        <div class="flex justify-start items-center">
           <div class="flex">
-            <li class="w-[5rem]">
+            <div class="w-[5rem]">
               <img src="resources/logo-white.png" alt="Logo du site" />
-            </li>
+            </div>
             <div class="mt-3">
-              <li class="name text-lg md:text-xl lg:text-2xl">Bruno Chauvel</li>
-              <li class="subtitle uppercase tracking-[0.2rem] text-sm md:text-md md:tracking-[0.3rem] lg:text-lg lg:tracking-[0.4rem]">
+              <div class="name text-lg md:text-xl lg:text-2xl">Bruno Chauvel</div>
+              <div class="subtitle uppercase tracking-[0.2rem] text-sm md:text-md md:tracking-[0.3rem] lg:text-lg lg:tracking-[0.4rem]">
                 Hypnose Ericksonienne
-              </li>
+              </div>
             </div>
           </div>
 
-          <li class="bg-[#CBDCEB] ms-10 p-3 text-center rounded hover:bg-[#E8DFCA] hidden md:block">
+          <div class="bg-[#CBDCEB] ms-10 p-3 text-center rounded hover:bg-[#E8DFCA] hidden md:block">
             <a href="#form-contact">Me contacter</a>
-          </li>
-          <li>
+          </div>
+          <div>
             <ul
               id="hamburgerMenu"
               class="absolute top-8 right-7 lg:right-10 flex flex-col justify-center">
@@ -45,25 +45,27 @@
             </ul>
 
             <ul id="sideBar" class="w-[15rem] lg:w-[20rem] bg-[#6D94C5] pt-28">
-              <li class="px-8 py-4 text-white text-sm lg:text-md">Accueil</li>
-              <li class="px-8 py-4 text-white text-sm lg:text-md">
+              <li class="px-8 py-4 text-white text-md hover:text-[#E8DFCA] lg:text-lg">
+                <a href="#top">Accueil</a>
+              </li>
+              <li class="px-8 py-4 text-white text-md hover:text-[#E8DFCA] lg:text-lg">
                 <a href="#second-section">Hypnose Ericksonienne</a>
               </li>
-              <li class="px-8 py-4 text-white text-sm lg:text-md">
+              <li class="px-8 py-4 text-white text-md hover:text-[#E8DFCA] lg:text-lg">
                 <a href="#third-section">Changements possibles</a>
               </li>
-              <li class="px-8 py-4 text-white text-sm lg:text-md">
+              <li class="px-8 py-4 text-white text-md hover:text-[#E8DFCA] lg:text-lg">
                 <a href="#fourth-section">Accompagnements</a>
               </li>
-              <li class="px-8 py-4 text-white text-sm lg:text-md">
+              <li class="px-8 py-4 text-white text-md hover:text-[#E8DFCA] lg:text-lg">
                 <a href="#fifth-section">A propos de moi</a>
               </li>
-              <li class="px-8 py-4 text-white text-sm lg:text-md">
+              <li class="px-8 py-4 text-white text-md hover:text-[#E8DFCA] lg:text-lg">
                 <a href="#form-contact">Contact</a>
               </li>
             </ul>
-          </li>
-        </ul>
+          </div>
+        </div>
       </nav>
     </header>
 
@@ -328,7 +330,7 @@
         </div>
         <div class="lg:h-full">
           <img
-            src="./resources/images/hypnose-ericksonienne-bruno-chauvel.jpg"
+            src="./resources/images/hypnose-ericksonienne-bruno-chauvel.webp"
             alt="Photo de Bruno Chauvel hypnothérapeute à Rennes"
             loading="lazy"
           />
