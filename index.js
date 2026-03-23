@@ -33,15 +33,32 @@ document.querySelector("form").addEventListener("submit", function (event) {
   event.preventDefault();
   // Dummy input to avoid robot
   const inputTrapped = document.getElementById("troll");
-  const inputs = document.querySelectorAll("input");
+  const inputName = document.getElementById("name");
+  const inputEmail = document.getElementById("email");
+  const emailValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(inputEmail.value);
+
+  // message d'erreur
+  if (inputTrapped.value || !inputName.value || !emailValid) {
+    Swal.fire({
+      icon: "error",
+      title: "Oups...",
+      text: "Merci de remplir correctement le formulaire.",
+      confirmButtonColor: "#d33",
+    });
+    return;
+  }
 
   // If all the field complete = robot so no mail
-  if (!inputTrapped.value) {
+  if (!inputTrapped.value && inputName.value && emailValid) {
     // get the time
     document.getElementById("time").value = new Date().toLocaleString("fr-FR");
     emailjs.sendForm("service_iuo8fi9", "template_fa7eraa", this).then(
       () => {
-        alert("Message envoyé ✅");
+        Swal.fire({
+          icon: "success",
+          title: "Message envoyé",
+          text: "Merci pour votre message ! Je reviens vers vous le plus rapidement possible",
+        });
         this.reset();
       },
       (error) => {
