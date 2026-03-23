@@ -25,9 +25,7 @@ document.addEventListener("click", (e) => {
 
 // Envoi mail
 // this method allows the setup of Options for the application globally. The configuration should happen before any send email method is called
-(function () {
-  emailjs.init("2l1o8GgE6UDC_RGJ_");
-})();
+emailjs.init({publicKey : "2l1o8GgE6UDC_RGJ_",});
 
 document.querySelector("form").addEventListener("submit", function (event) {
   event.preventDefault();
@@ -52,7 +50,8 @@ document.querySelector("form").addEventListener("submit", function (event) {
   if (!inputTrapped.value && inputName.value && emailValid) {
     // get the time
     document.getElementById("time").value = new Date().toLocaleString("fr-FR");
-    emailjs.sendForm("service_iuo8fi9", "template_fa7eraa", this).then(
+    emailjs.sendForm("service_iuo8fi9", "template_fa7eraa", this)
+      .then(
       () => {
         Swal.fire({
           icon: "success",
